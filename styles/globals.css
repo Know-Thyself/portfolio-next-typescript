@@ -1,4 +1,8 @@
 :root {
+	--header-bg: #29262b;
+	--active-nav-border: rgb(60, 68, 32);
+	--active-nav-border: #18bc9c;
+	--active-nav-color: #18bc9c;
 	--max-width: 1100px;
 	--border-radius: 12px;
 	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
