@@ -10,7 +10,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import blackPinkImage from '@/public/images/hero/black-pink.png'
-import frontendImage from '@/public/images/hero/responsive-two.jpg'
+import frontendImage from '@/public/images/hero/responsive-five.jpg'
 import backendImage from '@/public/images/hero/backend.png'
 import fullStackImage from '@/public/images/hero/full-stack.jpg'
 import databaseImage from '@/public/images/hero/database.jpg'
@@ -77,9 +77,8 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 	return (
 		<div className={styles.carousel}>
 			<div className={styles['carousel-images']}>
-				<AnimatePresence initial={false}>
-					<div className={styles['image-wrapper']}>
-						{/* <motion.img
+				<div className={styles['image-wrapper']}>
+					{/* <motion.img
 							key={currentIndex}
 							src={`images/${images[currentIndex].img}`}
 							onMouseEnter={() => setPauseAutoPlay(true)}
@@ -90,27 +89,30 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 							exit={{ opacity: 0 }}
 							transition={{ ease: 'easeOut', duration: 2 }}
 						/> */}
-						<Image
-							src={
-								hero[currentIndex].image.includes('black-pink')
-									? blackPinkImage
-									: hero[currentIndex].image.includes('responsive')
-									? frontendImage
-									: hero[currentIndex].image.includes('backend')
-									? backendImage
-									: hero[currentIndex].image.includes('database')
-									? databaseImage
-									: hero[currentIndex].image.includes('full-stack')
-									? fullStackImage
-									: ''
-							}
-							alt={hero[currentIndex].field}
-							className={styles['carousel-img']}
-						/>
+					<Image
+						src={
+							hero[currentIndex].image.includes('black-pink')
+								? blackPinkImage
+								: hero[currentIndex].image.includes('responsive')
+								? frontendImage
+								: hero[currentIndex].image.includes('backend')
+								? backendImage
+								: hero[currentIndex].image.includes('database')
+								? databaseImage
+								: hero[currentIndex].image.includes('full-stack')
+								? fullStackImage
+								: ''
+						}
+						alt={hero[currentIndex].field}
+						className={styles['carousel-img']}
+					/>
+					<div
+						className={`${styles.overlay}`}
+						onMouseEnter={() => setPauseAutoPlay(true)}
+						onMouseLeave={() => setPauseAutoPlay(false)}
+					>
 						<div
-							className={`bg-dark bg-opacity-25 ${styles.overlay}`}
-							onMouseEnter={() => setPauseAutoPlay(true)}
-							onMouseLeave={() => setPauseAutoPlay(false)}
+							className={`bg-dark bg-opacity-25 ${styles['overlay-inner-container']}`}
 						>
 							<h1
 								className={`text-center ${oswald.className} ${
@@ -141,39 +143,39 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 							</div> */}
 						</div>
 					</div>
-					<div className={styles['slide_direction']}>
-						<motion.div
-							variants={slidersVariants}
-							whileHover='hover'
-							className={styles.left}
-							onClick={handlePrevious}
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							exit={{ opacity: 0 }}
-							transition={{ ease: 'easeOut', duration: 0.5 }}
-						>
-							<FontAwesomeIcon
-								icon={faChevronCircleLeft}
-								className={styles['fa-chevron']}
-							/>
-						</motion.div>
-						<motion.div
-							variants={slidersVariants}
-							whileHover='hover'
-							className={styles.right}
-							onClick={handleNext}
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							exit={{ opacity: 0 }}
-							transition={{ ease: 'easeOut', duration: 0.5 }}
-						>
-							<FontAwesomeIcon
-								icon={faChevronCircleRight}
-								className={styles['fa-chevron']}
-							/>
-						</motion.div>
-					</div>
-				</AnimatePresence>
+				</div>
+				<div className={styles['slide_direction']}>
+					<motion.div
+						variants={slidersVariants}
+						whileHover='hover'
+						className={styles.left}
+						onClick={handlePrevious}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+					>
+						<FontAwesomeIcon
+							icon={faChevronCircleLeft}
+							className={styles['fa-chevron']}
+						/>
+					</motion.div>
+					<motion.div
+						variants={slidersVariants}
+						whileHover='hover'
+						className={styles.right}
+						onClick={handleNext}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						transition={{ ease: 'easeOut', duration: 0.5 }}
+					>
+						<FontAwesomeIcon
+							icon={faChevronCircleRight}
+							className={styles['fa-chevron']}
+						/>
+					</motion.div>
+				</div>
 			</div>
 			<div className={styles['carousel-indicator']}>
 				{hero.map((item, index) => (
