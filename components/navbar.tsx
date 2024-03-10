@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { roboto, raleway } from '@/styles/fonts'
+import { roboto, raleway, concert } from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
@@ -41,7 +41,7 @@ export default function Navbar() {
 		>
 			<div className='container-fluid'>
 				<Link
-					className={`navbar-brand border-0 mx-4 ${styles.brand} ${roboto.className}`}
+					className={`navbar-brand border-0 mx-4 ${styles.brand} ${concert.className}`}
 					href='/'
 				>
 					BK Web Developer

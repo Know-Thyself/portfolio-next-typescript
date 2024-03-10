@@ -1,5 +1,6 @@
 .main {
 	padding-top: 74px;
+	position: relative;
 	min-height: 100vh;
 
 }

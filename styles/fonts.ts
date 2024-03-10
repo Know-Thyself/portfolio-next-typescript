@@ -11,6 +11,8 @@ import {
 	Comfortaa,
 	Abril_Fatface,
 	Lato,
+	Concert_One,
+	Oswald,
 } from 'next/font/google'
 
 const roboto = Roboto({
@@ -49,6 +51,14 @@ const fatface = Abril_Fatface({
 
 const lato = Lato({ subsets: ['latin'], weight: '900' })
 
+const concert = Concert_One({
+	subsets: ['latin'],
+	weight: '400',
+	display: 'block',
+})
+
+const oswald = Oswald({ subsets: ['latin'] })
+
 export {
 	roboto,
 	raleway,
@@ -62,4 +72,6 @@ export {
 	comfortaa,
 	fatface,
 	lato,
+	concert,
+	oswald,
 }
