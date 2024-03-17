@@ -1,20 +1,21 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faChevronCircleLeft,
 	faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons'
+import { playfairDisplay, playfairDisplayItalic, montserrat } from '@/styles/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import blackPinkImage from '@/public/images/hero/black-pink.png'
-import frontendImage from '@/public/images/hero/responsive-five.jpg'
+import frontendImage from '@/public/images/hero/frontend.jpg'
 import backendImage from '@/public/images/hero/backend.png'
 import fullStackImage from '@/public/images/hero/full-stack.jpg'
 import databaseImage from '@/public/images/hero/database.jpg'
-import { oswald } from '@/styles/fonts'
+import AnimateContainer from '@/animations/animate-container'
 import styles from '@/styles/carousel.module.css'
 
 type HeroProps = {
@@ -26,6 +27,7 @@ type HeroProps = {
 }
 
 const Carousel = ({ hero }: { hero: HeroProps[] }) => {
+	hero.sort((a, b) => a.id - b.id)
 	const [currentIndex, setCurrentIndex] = useState(0)
 	const [pauseAutoPlay, setPauseAutoPlay] = useState(false)
 	const timeoutRef = useRef<NodeJS.Timeout>()
@@ -65,7 +67,7 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 					setCurrentIndex(prevIndex =>
 						prevIndex === hero.length - 1 ? 0 : prevIndex + 1
 					),
-				4000
+				5000
 			)
 
 			return () => {
@@ -78,69 +80,61 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 		<div className={styles.carousel}>
 			<div className={styles['carousel-images']}>
 				<div className={styles['image-wrapper']}>
-					{/* <motion.img
-							key={currentIndex}
-							src={`images/${images[currentIndex].img}`}
-							onMouseEnter={() => setPauseAutoPlay(true)}
-							onMouseLeave={() => setPauseAutoPlay(false)}
-							className='carousel-img'
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							exit={{ opacity: 0 }}
-							transition={{ ease: 'easeOut', duration: 2 }}
-						/> */}
-					<Image
-						src={
-							hero[currentIndex].image.includes('black-pink')
-								? blackPinkImage
-								: hero[currentIndex].image.includes('responsive')
-								? frontendImage
-								: hero[currentIndex].image.includes('backend')
-								? backendImage
-								: hero[currentIndex].image.includes('database')
-								? databaseImage
-								: hero[currentIndex].image.includes('full-stack')
-								? fullStackImage
-								: ''
-						}
-						alt={hero[currentIndex].field}
-						className={styles['carousel-img']}
-					/>
+					<AnimateContainer
+						el='div'
+						onMouseEnter={() => setPauseAutoPlay(true)}
+						onMouseLeave={() => setPauseAutoPlay(false)}
+						duration={1}
+						delay={0.5}
+						className={styles['carousel-img-wrapper']}
+						// transition={{ ease: 'easeOut', duration: 3 }}
+					>
+						<Image
+							src={
+								hero[currentIndex].image.includes('black-pink')
+									? blackPinkImage
+									: hero[currentIndex].image.includes('frontend')
+									? frontendImage
+									: hero[currentIndex].image.includes('backend')
+									? backendImage
+									: hero[currentIndex].image.includes('database')
+									? databaseImage
+									: hero[currentIndex].image.includes('full-stack')
+									? fullStackImage
+									: ''
+							}
+							alt={hero[currentIndex].field}
+							className={styles['carousel-img']}
+						/>
+					</AnimateContainer>
 					<div
 						className={`${styles.overlay}`}
 						onMouseEnter={() => setPauseAutoPlay(true)}
 						onMouseLeave={() => setPauseAutoPlay(false)}
 					>
-						<div
-							className={`bg-dark bg-opacity-25 ${styles['overlay-inner-container']}`}
-						>
+						<div className={`${styles['overlay-inner-container']}`}>
 							<h1
-								className={`text-center ${oswald.className} ${
+								className={`text-center ${playfairDisplayItalic.className} ${
 									styles['hero-field']
 								} ${currentIndex % 2 ? styles['bright-field'] : ''}`}
 							>
 								{hero[currentIndex].field}
 							</h1>
-							<h3
-								className={`text-center ${oswald.className} ${
+							<h2
+								className={`text-center ${playfairDisplay.className} ${
 									styles['hero-highlight']
 								} ${currentIndex % 2 ? styles['bright-highlight'] : ''}`}
 							>
 								{hero[currentIndex].highlight}
-							</h3>
+							</h2>
 							<div className={styles.links}>
-								<Link href='/services' className={styles.link}>
-									My Services
+								<Link href='/services' className={`${styles.link}`}>
+									<span className={montserrat.className}>My Services</span>
 								</Link>
-								<Link href='/about' className={styles.link}>
-									About me
+								<Link href='/about' className={`${styles.link}`}>
+									<span className={montserrat.className}>About Me</span>
 								</Link>
 							</div>
-							{/* <div className=''>
-								<h2 className='text-white fw-semibold display-6'>
-									{hero[currentIndex].label}
-								</h2>
-							</div> */}
 						</div>
 					</div>
 				</div>

@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootswatch/dist/flatly/bootstrap.min.css'
 import '../styles/globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'BK Web Developer',
@@ -19,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
+			<body>
 				<Navbar />
 				{children}
 			</body>

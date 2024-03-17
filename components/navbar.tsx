@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { roboto, raleway, concert } from '@/styles/fonts'
+import { playfairDisplayItalic, montserrat } from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
@@ -41,7 +41,7 @@ export default function Navbar() {
 		>
 			<div className='container-fluid'>
 				<Link
-					className={`navbar-brand border-0 mx-4 ${styles.brand} ${concert.className}`}
+					className={`navbar-brand border-0 ${styles.brand} ${playfairDisplayItalic.className}`}
 					href='/'
 				>
 					BK Web Developer
@@ -57,9 +57,11 @@ export default function Navbar() {
 					<span></span>
 				</label>
 				{(toggleMenu || screenWidth > 767) && (
-					<nav className={`text-center me-auto me-md-5 ${styles['menu__box']}`}>
+					<nav
+						className={`text-center me-auto me-md-5 ${styles['menu__box']} ${montserrat.className}`}
+					>
 						<ul
-							className={`navbar-nav ms-auto border-0 ${styles['menu__box__ul']} ${raleway.className}`}
+							className={`navbar-nav ms-auto border-0 ${styles['menu__box__ul']}`}
 						>
 							<li className={`nav-item me-1 ${styles['custom-nav-item']}`}>
 								<Link

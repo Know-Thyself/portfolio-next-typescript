@@ -20,3 +20,19 @@ model hero {
     highlight    String   @db.VarChar(255)
     technologies String[]
 }
+
+model intro {
+    id       Int    @id @default(autoincrement())
+    name     String @db.VarChar(255)
+    greeting String @db.VarChar(255)
+    image    String @db.VarChar(255)
+    intro    String @db.VarChar(1000)
+}
+
+model portfolio {
+    id          Int      @id @default(autoincrement())
+    title       String   @db.VarChar(255)
+    image       String   @db.VarChar(255)
+    description String   @db.Text
+    logos       String[]
+}
