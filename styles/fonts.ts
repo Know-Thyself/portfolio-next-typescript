@@ -18,6 +18,7 @@ const playfairDisplayItalic = Playfair_Display({
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
+	weight: 'variable',
 	display: 'swap',
 	preload: true,
 })

@@ -1,99 +1,20 @@
 :root {
-	--header-bg: #29262b;
-	--header-bg: #504A4B;
-	--header-bg: #2A3439;
 	--header-bg: #343434;
-	--brand-color: #FFBE98;
-	--brand-color: #FF8E8F;
-	--brand-color: #ae4573;
-	--brand-color: #CF87A7;
-	--brand-color: #f0810f;
-	--brand-color: #0F7EF0;
-	--active-nav-desktop: #7BD3EA;
-	--active-nav-desktop: #CF87A7;
-	--active-nav-desktop: #FEFF86;
-	--active-nav-desktop: #3F98F3;
+	/* cool gray */
+	--brand-color: #8C92AC;
+	--brand-color: #c6989a;
+	--accent-color: #933D41;
+	--primary-color: #074095;
+	--secondary-color: #933D41;
+	--complementary-color: #3B032F;
+	--headings-text-color: #2c2c2c;
+	--active-nav-desktop: #c6989a;
 	--active-nav-mobile: #074095;
-	--hero-field-color: #fd6b6e;
-	--hero-field-color: #9a1750;
-	--hero-field-color: #c3073f;
-	--hero-field-color: #F7418F;
-	--hero-field-color: #B3A398;
-	--hero-field-color: #CD8D7A;
-	--hero-field-color: #00A9FF;
-	--hero-field-color: #9376E0;
-	--hero-field-color: #5d535e;
-	--hero-field-color: #f0810f;
-	--hero-field-color: #f0810f;
-	--hero-field-bright-color: #7286D3;
-	--hero-field-bright-color: #2f2fa2;
-	--hero-field-bright-color: #f64c72;
-	--hero-field-bright-color: #c3073f;
-	--hero-field-bright-color: #950740;
-	--hero-field-bright-color: #F7418F;
-	--hero-field-bright-color: #B3A398;
-	--hero-field-bright-color: #00A9FF;
-	--hero-field-bright-color: #11001c;
-	--hero-field-bright-color: #ff420e;
-	--hero-field-bright-color: #fb6542;
-	--hero-field-bright-color: #f0810f;
-	--hero-highlight-color: #00A9FF;
-	--hero-highlight-color: #F875AA;
-	--hero-highlight-color: #FFDFDF;
-	--hero-highlight-color: #F9B572;
-
-	--hero-highlight-color: #e7717d;
-	--hero-highlight-color: #66fcf1;
-	--hero-highlight-color: #e98074;
-	--hero-highlight-color: #84ceeb;
-	--hero-highlight-color: #2e9cca;
-
-	--hero-highlight-color: #5680e9;
-	--hero-highlight-color: #179A61;
-	--hero-highlight-color: #1EC67D;
-	--hero-highlight-color: #3500dc;
-	--hero-highlight-color: #ffffff;
-
-	--hero-highlight-color: #E5E483;
-	--hero-highlight-color: #FF8E8F;
-	
-	--hero-highlight-color: #CF87A7;
-	--hero-highlight-color: #7BD3EA;
-	--hero-highlight-color: #BED1CF;
-	--hero-highlight-color: #FEFF86;
-	--hero-highlight-bright-color: #6f2232;
-	--hero-highlight-bright-color: #5680e9;
-	--hero-highlight-bright-color: #f13c20;
-
-	--hero-highlight-bright-color: #45a29e;
-	--hero-highlight-bright-color: #F7418F;
-	--hero-highlight-bright-color: #d83f87;
-
-	--hero-highlight-bright-color: #c3073f;
-
-	--hero-highlight-bright-color: #00A9FF;
-	--hero-highlight-bright-color: #1EC67D;
-	--hero-highlight-bright-color: #179A61;
-	--hero-highlight-bright-color: #158b57;
-	--hero-highlight-bright-color: #DAF5FF;
-	--hero-highlight-bright-color: #B1BCE6;
-
-	--hero-highlight-bright-color: #E4E978;
-	--hero-highlight-bright-color: #95ddee;
-	--hero-highlight-bright-color: #CF87A7;
-	--hero-highlight-bright-color: #7BD3EA;
-	--hero-highlight-bright-color: #e6df44;
-	--hero-highlight-bright-color: #FEFF86;
-	--max-width: 1100px;
-	--border-radius: 12px;
-	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-		"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-		"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-
+	--active-nav-mobile: #3D938F;
+	--overlay-text-bg: rgba(0, 0, 0, 0.5);
+	--overlay-text-color: #ffffff;
+	--carousel-dots: #2585F7;
+	--carousel-dots: #343434;
 	--primary-glow: conic-gradient(from 180deg at 50% 50%,
 			#16abff33 0deg,
 			#0885ff33 55deg,
@@ -112,11 +33,6 @@
 			#00000010,
 			#00000010,
 			#00000080);
-
-	--callout-rgb: 238, 240, 241;
-	--callout-border-rgb: 172, 175, 176;
-	--card-rgb: 180, 185, 188;
-	--card-border-rgb: 131, 134, 135;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -161,19 +77,14 @@ body {
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
+	/* color: rgb(var(--foreground-rgb)); */
 	background: linear-gradient(to bottom,
 			transparent,
 			rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+	font-size: 16px;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
 }

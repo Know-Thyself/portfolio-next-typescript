@@ -5,11 +5,34 @@
 
 }
 
+.intro-section {
+	padding: 0 1rem;
+}
+
 .title {
 	text-align: center;
-	font-weight: 900;
+	font-weight: 500;
 	margin-top: 1rem;
-	font-size: 4rem;
+	font-size: 2rem;
+	color: var(--header-bg);
+	color: var(--headings-text-color);
+}
+
+.name {
+	color: var(--complementary-color);
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.intro {
+	font-weight: 500;
+}
+
+@media screen and (min-width: 1280px) {
+	.title {
+		font-size: 2.5rem;
+		font-weight: 300;
+	}
 }
 
 /* .intro {

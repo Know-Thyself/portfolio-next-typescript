@@ -1,10 +1,10 @@
 import styles from '@/styles/about.module.css'
-import { lora } from '@/styles/fonts'
+import { playfairDisplay } from '@/styles/fonts'
 
 export default function AboutComponent() {
 	return (
 		<main className={styles.main}>
-			<h1 className={`${styles.title} ${lora.className}`}>About Page</h1>
+			<h1 className={`${styles.title} ${playfairDisplay.className}`}>About Page</h1>
 		</main>
 	)
 }

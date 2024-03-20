@@ -7,11 +7,15 @@ import {
 	faChevronCircleLeft,
 	faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons'
-import { playfairDisplay, playfairDisplayItalic, montserrat } from '@/styles/fonts'
+import {
+	playfairDisplay,
+	playfairDisplayItalic,
+	montserrat,
+} from '@/styles/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import blackPinkImage from '@/public/images/hero/black-pink.png'
-import frontendImage from '@/public/images/hero/frontend.jpg'
+import frontendImage from '@/public/images/hero/frontend-two.jpg'
 import backendImage from '@/public/images/hero/backend.png'
 import fullStackImage from '@/public/images/hero/full-stack.jpg'
 import databaseImage from '@/public/images/hero/database.jpg'
@@ -113,20 +117,20 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 						onMouseLeave={() => setPauseAutoPlay(false)}
 					>
 						<div className={`${styles['overlay-inner-container']}`}>
-							<h1
-								className={`text-center ${playfairDisplayItalic.className} ${
-									styles['hero-field']
-								} ${currentIndex % 2 ? styles['bright-field'] : ''}`}
+							<div
+								className={`${styles['overlay-text-wrapper']}`}
 							>
-								{hero[currentIndex].field}
-							</h1>
-							<h2
-								className={`text-center ${playfairDisplay.className} ${
-									styles['hero-highlight']
-								} ${currentIndex % 2 ? styles['bright-highlight'] : ''}`}
-							>
-								{hero[currentIndex].highlight}
-							</h2>
+								<h1
+									className={`text-center ${playfairDisplayItalic.className} ${styles['hero-field']}`}
+								>
+									{hero[currentIndex].field}
+								</h1>
+								<h2
+									className={`text-center ${playfairDisplay.className} ${styles['hero-highlight']}`}
+								>
+									{hero[currentIndex].highlight}
+								</h2>
+							</div>
 							<div className={styles.links}>
 								<Link href='/services' className={`${styles.link}`}>
 									<span className={montserrat.className}>My Services</span>

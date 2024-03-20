@@ -1,5 +1,5 @@
 import styles from '@/styles/home.module.css'
-import { playfairDisplay, montserrat } from '@/styles/fonts'
+import { playfairDisplay, montserrat, playfairDisplayItalic } from '@/styles/fonts'
 import AnimateCharacters from '@/animations/animate-characters'
 import Carousel from './carousel'
 
@@ -53,8 +53,8 @@ export default function Home({
 				/>
 				<div>
 					<p className={`${styles.intro} ${montserrat.className}`}>
-						<span className={styles.name}>
-							{intro.name.split(' ')[0] + ' here'},
+						<span className={`${styles.name} ${playfairDisplayItalic.className}`}>
+							{intro.name.split(' ')[0] + ' here'},{' '}
 						</span>
 						{intro.intro}
 					</p>

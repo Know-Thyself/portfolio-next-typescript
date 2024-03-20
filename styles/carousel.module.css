@@ -11,81 +11,75 @@
     overflow: hidden;
 }
 
-.overlay {
+.carousel-images:after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    margin: auto;
-    color: var(--body-bg);
-}
-
-.overlay-inner-container {
-    position: absolute;
-    top: 50%;
-    top: calc(50% + 24px);
-    left: 0;
-    /* left: 50%; */
-    display: flex;
-    width: 100%;
-    margin: auto;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-}
-
-.hero-field,
-.hero-highlight {
-    width: 80%;
-    margin: auto;
-    color: var(--hero-highlight-color);
-
-    /* font-size: 1rem;
-    margin-bottom: -0.5rem; */
-}
-
-.hero-field {
-    width: 100%;
-    /* margin-bottom: -1rem;
-    margin-top: -1rem; */
-    color: var(--hero-field-color);
-    /* text-shadow: 2px 2px var(--hero-highlight-color); */
-}
-
-.hero-highlight {
-    text-shadow: 2px 2px var(--hero-field-color);
-}
-
-.bright-field {
-    color: var(--hero-field-bright-color);
-    /* text-shadow: 2px 2px var(--hero-highlight-bright-color); */
-}
-
-.bright-highlight {
-    color: var(--hero-highlight-bright-color);
-    text-shadow: 2px 2px var(--hero-field-bright-color);
 }
 
 .carousel-images .carousel-img {
     width: 100%;
     height: auto;
     height: 280px;
-    /* padding-top: 74px; */
 }
 
-.carousel-images:after {
-    content: '';
+.overlay {
     position: absolute;
-    /* top: 88%; */
+    top: 0;
     left: 0;
-    /* height: 100%; */
-    /* width: 150%; */
-    /* -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    transform: rotate(-7deg); */
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.overlay-inner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* left: 50%; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* padding: 0.5rem; */
+}
+
+.overlay-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    background-color: var(--overlay-text-bg);
+}
+
+
+.hero-field {
+    width: 100%;
+    color: var(--overlay-text-color);
+    font-weight: 900;
+    margin: 0;
+    /* text-shadow: 2px 2px var(--overlay-text-color); */
+}
+
+.hero-highlight {
+    /* text-shadow: 2px 2px var(--overlay-text-color); */
+    width: 85%;
+    margin: auto;
+    color: var(--overlay-text-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
 
 .slide_direction {
     width: 95%;
@@ -98,14 +92,14 @@
 .fa-chevron {
     font-size: 1.5rem;
     color: white;
-    color: var(--hero-field-color);
+    color: var(--accent-color);
     cursor: pointer;
 }
 
 .left,
 .right {
     position: absolute;
-    top: calc(50% - 24px);
+    top: calc(50% - 16px);
     /* bottom: 50%; */
     /* margin: auto 16px; */
 }
@@ -131,7 +125,8 @@
 }
 
 .dot {
-    background-color: var(--hero-field-color);
+    background-color: var(--overlay-text-color);
+    background-color: var(--carousel-dots);
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -141,8 +136,9 @@
 }
 
 .current {
-    background-color: var(--hero-highlight-color);
-    background-color: var(--brand-color);
+    background-color: var(--overlay-text-color);
+    background-color: var(--accent-color);
+    background-color: var(--accent-color);
     cursor: default;
 }
 
@@ -157,7 +153,7 @@
 .link {
     background-color: rgba(240, 129, 15, 0.35);
     background-color: rgba(0, 0, 0, 0.35);
-    border: 1px solid var(--hero-field-color);
+    border: 1px solid var(--accent-color);
     transition: transform 0.2s;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -177,44 +173,37 @@
         height: 640px;
     } */
 
-    .overlay {
-        width: 80%;
-        width: 100%;
-        /* margin: auto; */
-        /* right: 10%; */
-        /* top: 52px; */
-        /* top: 36%;
-        right: 10%; */
+    /* .overlay,
+    .overlay-inner-container {
+        height: auto;
+    } */
+    .overlay-inner-container {
+        gap: 0;
     }
 
-    .overlay-inner-container {
+    .overlay-text-wrapper {
         width: 80%;
-        padding: 1rem 0;
-        top: 50%;
-        top: calc(50% + 48px);
-        left: 10%;
+        margin: auto;
     }
 
     .hero-field {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 
     .hero-highlight {
-        font-size: 1.5rem;
         font-weight: 500;
-        margin: auto;
     }
 
     .slide_direction {
         width: 90%;
     }
 
-    .left,
+    /* .left,
     .right {
         top: calc(50% - 10px);
 
-    }
+    } */
 
     .left {
         left: 5%;
@@ -231,6 +220,7 @@
 
     .links {
         gap: 2rem;
+        padding-bottom: 40px;
     }
 
     /* .dot {
@@ -238,7 +228,7 @@
     } */
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1280px) {
     .carousel-images .carousel-img {
         height: 440px;
         margin: auto;
@@ -248,16 +238,32 @@
     /* .overlay {
     } */
 
-    .overlay-inner-container {
+    /* .overlay-inner-container {
         padding: 2rem;
-        width: 90%;
-        top: calc(50% + 80px);
-        left: 5%;
-    }
+    } */
 
     /* .bg-opacity {
         opacity: 0.1;
     } */
+    .overlay-inner-container {
+        gap: 0;
+    }
+
+    .overlay-text-wrapper {
+        width: 70%;
+        padding-bottom: 1rem;
+    }
+
+    .hero-field {
+        font-size: 4.5rem;
+        font-weight: 900;
+    }
+
+    .hero-highlight {
+        width: 100%;
+        font-size: 2rem;
+    }
+
     .left,
     .right {
         top: calc(50% - 20px);
@@ -272,6 +278,11 @@
         gap: 20px;
     }
 
+    .links {
+        padding-bottom: 120px;
+        margin-top: -4rem;
+    }
+
     .link {
         padding: 0.75rem 1rem;
         border-radius: 7px;
@@ -284,16 +295,7 @@
         margin-top: -46px;
     }
 
-    .hero-field {
-        font-size: 4.5rem;
-        font-weight: 900;
-    }
 
-    .hero-highlight {
-        width: 70%;
-        font-size: 3rem;
-        font-weight: 500;
-    }
 
     /* .left,
     .right {
