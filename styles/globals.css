@@ -3,18 +3,57 @@
 	/* cool gray */
 	--brand-color: #8C92AC;
 	--brand-color: #c6989a;
+	--brand-color: #895061;
+	--brand-color: #089BD2;
+	--brand-color: #17B9F6;
+	--brand-color: #8A7F8D;
+	--brand-color: #487aff;
+	--brand-color: #d2c0b2;
+	--primary-bg: #98C6C4;
+	--primary-bg: #0677A1;
+	--primary-bg: #d2c0b2;
+	--primary-bg: #79616f;
+	--primary-bg: #121e26;
+	--primary-bg: #59253A;
+	--primary-bg: #283635;
 	--accent-color: #933D41;
+	--accent-color: #78244C;
+	--accent-color: #78244C;
+	--accent-color: #59253A;
+	--accent-color: #895061;
+	--accent-color: #2D4159;
+	--accent-color: #464866;
+
+	--accent-color: #3B444B;
+	--accent-color: #36454F;
+	--accent-color: #0677A1;
+	/* CARBON GRAY */
+	--accent-color: #625D5D;
+	--accent-color: #504A4B;
+	--accent-color: #79616f;
 	--primary-color: #074095;
+	--primary-color: #0677A1;
 	--secondary-color: #933D41;
 	--complementary-color: #3B032F;
+	--complementary-color: #121e26;
 	--headings-text-color: #2c2c2c;
 	--active-nav-desktop: #c6989a;
+	--active-nav-desktop: #0677A1;
+	--active-nav-desktop: #089BD2;
+	--active-nav-desktop: #17B9F6;
+	--active-nav-desktop: #8A7F8D;
+	--active-nav-desktop: #d2c0b2;
+
 	--active-nav-mobile: #074095;
 	--active-nav-mobile: #3D938F;
 	--overlay-text-bg: rgba(0, 0, 0, 0.5);
 	--overlay-text-color: #ffffff;
-	--carousel-dots: #2585F7;
-	--carousel-dots: #343434;
+	--carousel-dots-bg: #847C7D;
+	--carousel-dots-bg: #2585F7;
+	--carousel-dots-bg: #59253A;
+	--carousel-dots-bg: #283635;
+	--carousel-dots-bg: #61796B;
+	--carousel-dots-bg: #343434;
 	--primary-glow: conic-gradient(from 180deg at 50% 50%,
 			#16abff33 0deg,
 			#0885ff33 55deg,

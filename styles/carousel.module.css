@@ -117,11 +117,10 @@
 }
 
 .dot {
-    background-color: var(--carousel-dots);
+    background-color: var(--carousel-dots-bg);
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    z-index: 12;
     cursor: pointer;
 }
 
@@ -151,6 +150,7 @@
 
 .link:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -216,6 +216,7 @@
         padding: 0.75rem 1rem;
         border-radius: 7px;
         font-weight: 500;
+        cursor: pointer;
     }
 
     .dot {
