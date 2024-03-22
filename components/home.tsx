@@ -4,6 +4,8 @@ import {
 	playfairDisplayItalic,
 } from '@/styles/fonts'
 import AnimateCharacters from '@/animations/animate-characters'
+import AnimateContainer from '@/animations/animate-container'
+import AnimateWords from '@/animations/animate-words'
 import Image from 'next/image'
 import Link from 'next/link'
 import uiUxImage from '@/public/images/hero/ui-ux-img.jpg'
@@ -82,35 +84,68 @@ export default function Home({
 								: styles['grid-container-even']
 						}
 					>
-						<div className={styles['text-wrapper']}>
-							<h1 className={`${styles.field} ${playfairDisplay.className}`}>
-								{item.field}
-							</h1>
-							<h2
-								className={`${styles.highlight} ${playfairDisplayItalic.className}`}
-							>
-								{item.highlight}
-							</h2>
-						</div>
-						<Image
-							src={
-								item.image.includes('black-pink')
-									? uiUxImage
-									: item.image.includes('frontend')
-									? frontendImage
-									: item.image.includes('backend')
-									? backendImage
-									: item.image.includes('database')
-									? databaseImage
-									: item.image.includes('full-stack')
-									? fullStackImage
-									: ''
-							}
-							alt={item.field}
-							className={styles.image}
-						/>
+						<AnimateContainer
+							el='div'
+							x={index % 2 ? 200 : -200}
+							delay={0.5}
+							duration={2}
+							once
+							className={styles['text-animation-container']}
+						>
+							<div className={styles['text-wrapper']}>
+								<AnimateCharacters
+									el='h1'
+									text={item.field}
+									className={`${styles.field} ${playfairDisplay.className}`}
+									rotateY={180}
+									rotateX={180}
+									delay={2.5}
+									once
+									duration={1}
+								/>
+								<AnimateWords
+									el='h2'
+									text={item.highlight}
+									y={20}
+									delay={3.5}
+									once
+									duration={1}
+									className={`${styles.highlight} ${playfairDisplayItalic.className}`}
+								/>
+							</div>
+						</AnimateContainer>
+						<AnimateContainer
+							el='div'
+							x={index % 2 ? -200 : 200}
+							delay={0.5}
+							duration={2}
+							once
+						>
+							<Image
+								src={
+									item.image.includes('black-pink')
+										? uiUxImage
+										: item.image.includes('frontend')
+										? frontendImage
+										: item.image.includes('backend')
+										? backendImage
+										: item.image.includes('database')
+										? databaseImage
+										: item.image.includes('full-stack')
+										? fullStackImage
+										: ''
+								}
+								alt={item.field}
+								className={styles.image}
+							/>
+						</AnimateContainer>
 					</div>
 				))}
+				<div className={styles['services-link-wrapper']}>
+					<Link href='/services' className={`${styles['services-link']}`}>
+						<span className={montserrat.className}>Checkout My Services</span>
+					</Link>
+				</div>
 			</section>
 		</main>
 	)

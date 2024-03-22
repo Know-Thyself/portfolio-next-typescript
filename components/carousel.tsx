@@ -90,6 +90,8 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 						onMouseLeave={() => setPauseAutoPlay(false)}
 						duration={1}
 						delay={0.5}
+						once
+						scale={0}
 						className={styles['carousel-img-wrapper']}
 						// transition={{ ease: 'easeOut', duration: 3 }}
 					>
@@ -111,36 +113,36 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 							className={styles['carousel-img']}
 						/>
 					</AnimateContainer>
-					<div
-						className={`${styles.overlay}`}
-						onMouseEnter={() => setPauseAutoPlay(true)}
-						onMouseLeave={() => setPauseAutoPlay(false)}
-					>
-						<div className={`${styles['overlay-inner-container']}`}>
-							<div
-								className={`${styles['overlay-text-wrapper']}`}
-							>
-								<h1
-									className={`text-center ${playfairDisplayItalic.className} ${styles['hero-field']}`}
-								>
-									{hero[currentIndex].field}
-								</h1>
-								<h2
-									className={`text-center ${playfairDisplay.className} ${styles['hero-highlight']}`}
-								>
-									{hero[currentIndex].highlight}
-								</h2>
-							</div>
-							<div className={styles.links}>
-								<Link href='/services' className={`${styles.link}`}>
-									<span className={montserrat.className}>My Services</span>
-								</Link>
-								<Link href='/about' className={`${styles.link}`}>
-									<span className={montserrat.className}>About Me</span>
-								</Link>
+					<AnimateContainer el='div' delay={1.5} duration={2} once>
+						<div
+							className={`${styles.overlay}`}
+							onMouseEnter={() => setPauseAutoPlay(true)}
+							onMouseLeave={() => setPauseAutoPlay(false)}
+						>
+							<div className={`${styles['overlay-inner-container']}`}>
+								<div className={`${styles['overlay-text-wrapper']}`}>
+									<h1
+										className={`text-center ${playfairDisplayItalic.className} ${styles['hero-field']}`}
+									>
+										{hero[currentIndex].field}
+									</h1>
+									<h2
+										className={`text-center ${playfairDisplay.className} ${styles['hero-highlight']}`}
+									>
+										{hero[currentIndex].highlight}
+									</h2>
+								</div>
+								<div className={styles.links}>
+									<Link href='/services' className={`${styles.link}`}>
+										<span className={montserrat.className}>My Services</span>
+									</Link>
+									<Link href='/about' className={`${styles.link}`}>
+										<span className={montserrat.className}>About Me</span>
+									</Link>
+								</div>
 							</div>
 						</div>
-					</div>
+					</AnimateContainer>
 				</div>
 				<div className={styles['slide_direction']}>
 					<motion.div
