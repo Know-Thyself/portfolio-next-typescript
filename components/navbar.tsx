@@ -2,7 +2,11 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { playfairDisplayItalic, montserrat } from '@/styles/fonts'
+import {
+	playfairDisplay,
+	playfairDisplayItalic,
+	montserrat,
+} from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
@@ -44,7 +48,10 @@ export default function Navbar() {
 					className={`navbar-brand border-0 ${styles.brand} ${playfairDisplayItalic.className}`}
 					href='/'
 				>
-					BK Web Developer
+					<span className={`${styles.initials} ${playfairDisplay.className}`}>
+						BK
+					</span>
+					<span>Web Developer</span>
 				</Link>
 				<input
 					id='menu__toggle'

@@ -88,7 +88,7 @@ export default function Home({
 							el='div'
 							x={index % 2 ? 200 : -200}
 							delay={0.5}
-							duration={2}
+							duration={1.5}
 							once
 							className={styles['text-animation-container']}
 						>
@@ -118,7 +118,7 @@ export default function Home({
 							el='div'
 							x={index % 2 ? -200 : 200}
 							delay={0.5}
-							duration={2}
+							duration={1.5}
 							once
 						>
 							<Image

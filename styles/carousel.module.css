@@ -33,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .overlay-inner-container {
@@ -98,6 +99,7 @@
 .right {
     position: relative;
     top: -8px;
+    z-index: 3;
 }
 
 .left {
@@ -120,14 +122,17 @@
 .dot {
     background-color: var(--carousel-dots-bg);
     background-color: var(--accent-color);
+    background-color: var(--button-bg);
     width: 12px;
     height: 12px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .current {
     background-color: var(--button-bg);
+    background-color: var(--accent-color);
     cursor: default;
 }
 
@@ -141,13 +146,15 @@
 .link {
     background-color: var(--overlay-text-bg);
     background-color: var(--button-bg);
-    border: 1px solid var(--accent-color);
+    /* border: 1px solid var(--accent-color); */
     transition: transform 0.2s;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-transform: uppercase;
+    color: var(--primary-text-color);
     color: var(--overlay-text-color);
+    font-weight: 500;
 }
 
 .link:hover {
@@ -215,9 +222,9 @@
     }
 
     .link {
-        padding: 0.75rem 1rem;
-        border-radius: 7px;
-        font-weight: 500;
+        padding: 0.75rem 1.25rem;
+        border-radius: 30px;
+        font-weight: 600;
         cursor: pointer;
     }
 

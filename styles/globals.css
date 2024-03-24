@@ -1,6 +1,8 @@
 :root {
 	--header-bg: #343434;
 	--header-bg: #6c648b;
+	--header-bg: #0e0b16;
+	--header-bg: #1d2228;
 	--header-bg: #3c3c3c;
 	--body-bg: #d5d5d5;
 	--body-bg: #d7cec7;
@@ -8,7 +10,15 @@
 	--body-bg: #838B64;
 	--body-bg: #328cc1;
 	--body-bg: #b37d4e;
+	--body-bg: #68bbe5;
 	--body-bg: #DDD0C8;
+	--body-bg: #e9d8e4;
+	--body-bg: #E9F1FA;
+	--body-bg: #e2f0f9;
+	--body-bg: #f2f1ef;
+	--body-bg: #d7cec7;
+	--body-bg: #e8eae3;
+	--body-bg: #f7efee;
 	--button-bg: #fba100;
 	--button-bg: #07889b;
 	--button-bg: #f7882f;
@@ -16,11 +26,35 @@
 	--button-bg: #286da8;
 	--button-bg: #438496;
 	--button-bg: #3E6A90;
-	--button-bg: #d98310;
 	--button-bg: #00ABE4;
 	--button-bg: #2272FF;
+
+	--button-bg: #4e53a5;
+	--button-bg: #3bba9c;
+	--button-bg: #343f71;
+
+	--button-bg: #3c1874;
+	--button-bg: #b73225;
+	--button-bg: #007cc7;
+	--button-bg: #249385;
+	--button-bg: #4a8bdf;
+	--button-bg: #8E0D3C;
+	--button-bg: #A0006D;
+	--button-bg: #f34c19;
+	--button-bg: #f7c200;
+	--button-bg: #178582;
+	--button-bg: #E7473C;
+	--button-bg: #2272FF;
+
+
+	--button-bg: #323232;
+	--button-bg: #00abe4;
+	--button-bg: #4a8bdf;
+	--button-bg: #408697;
+	--button-bg: #6f63ad;
+
+	--button-bg: #3756ff;
 	/* cool gray */
-	--brand-color: #8C92AC;
 	--brand-color: #c6989a;
 	--brand-color: #895061;
 	--brand-color: #089BD2;
@@ -32,6 +66,42 @@
 	--brand-color: #cdcdcd;
 	--brand-color: #99d3df;
 	--brand-color: #b6a19e;
+	--brand-color: #e9d8e4;
+	--brand-color: #cf8b64;
+
+	--brand-color: #b1a6a4;
+	--brand-color: #c09f80;
+	--brand-color: #B85669;
+	--brand-color: #9e15bf;
+	--brand-color: #cae7df;
+	--brand-color: #7ed5ea;
+	--brand-color: #4b9fe1;
+	--brand-color: #646c79;
+	
+	--brand-color: #7da2a9;
+	
+	--brand-color: #8C92AC;
+	--brand-color: #ACA68C;
+	--brand-color: #4AD3C1;
+	--brand-color: #3DD6DB;
+	--brand-color: #DB913D;
+	--brand-color: #e95d2a;
+
+	--brand-color: #d76f30;
+	--brand-color: #9daaf2;
+
+	--brand-initials-color: #cae7df;
+	--brand-initials-color: #f4abaa;
+	--brand-initials-color: #926961;
+	--brand-initials-color: #ACA68C;
+	--brand-initials-color: #A9847D;
+	--brand-initials-color: #4ac6d2;
+	--brand-initials-color: #c1436d;
+	--brand-initials-color: #BC2E40;
+	--brand-initials-color: #D34A5C;
+	--brand-initials-color: #db423d;
+	--brand-initials-color: #DB913D;
+	--brand-initials-color: #9daaf2;
 	--primary-bg: #98C6C4;
 	--primary-bg: #0677A1;
 	--primary-bg: #d2c0b2;
@@ -47,20 +117,89 @@
 	--primary-bg: #6c648b;
 	--primary-bg: #438496;
 	--primary-bg: #286da8;
-	
+
 	--primary-bg: #0b3c5d;
 	--primary-bg: #49274a;
 	--primary-bg: #008f95;
 	--primary-bg: #323232;
-	--primary-text-color: #000000;
+
+	--primary-bg: #4e53a5;
+	--primary-bg: #d22d16;
+	--primary-bg: #2e3047;
+	--primary-bg: #343f71;
+	--primary-bg: #283747;
+	--primary-bg: #283747;
+	--primary-bg: #12232e;
+	--primary-bg: #203647;
+	--primary-bg: #323232;
+	--primary-bg: #3c1874;
+	--primary-bg: #A0006D;
+	--primary-bg: #932432;
+	--primary-bg: #4A8BDF;
+	--primary-bg: #f53c88;
+	--primary-bg: #4e53a5;
+	--primary-bg: #44abfb;
+	--primary-bg: #3f74fe;
+	--primary-bg: #cf8b64;
+	--primary-bg: #b0dde4;
+
+	--primary-bg: #b1a6a4;
+	--primary-bg: #b999be;
+	--primary-bg: #B85669;
+	--primary-bg: #c09f80;
+
+	--primary-bg: #ddaf94;
+	--primary-bg: #7c677f;
+	--primary-bg: #7575dd;
+	--primary-bg: #fecd45;
+	--primary-bg: #f4abaa;
+	--primary-bg: #2a3166;
+	--primary-bg: #7ed5ea;
+	--primary-bg: #c1436d;
+	--primary-bg: #63bce5;
+	--primary-bg: #7da2a9;
+	--primary-bg: #646c79;
+	--primary-bg: #8C92AC;
+	--primary-bg: #ACA68C;
+	--primary-bg: #fecd45;
+
+	--primary-bg: #D34A5C;
+
+	--primary-bg: #db423d;
+	--primary-bg: #df5550;
+	--primary-bg: #e26662;
+	--primary-bg: #DB913D;
+
+
+	--primary-bg: #9daaf2;
+	--primary-bg: #f4db7d;
+	--primary-bg: #ff6a3d;
+	--primary-bg: #1a2238;
+	--primary-bg: #d48166;
+
 	--primary-text-color: #ffffff;
+	--primary-text-color: #e1ea35;
+	--primary-text-color: #8E0D3C;
+	--primary-text-color: #e2008a;
+	--primary-text-color: #e04850;
+	--primary-text-color: #fdf100;
+	--primary-text-color: #fcf201;
+	--primary-text-color: #f53c88;
+	--primary-text-color: #EA1764;
+	--primary-text-color: #000000;
+	--primary-text-color: #2a3166;
+	--primary-text-color: #ee7879;
+	--primary-text-color: #f4abaa;
+	--primary-text-color: #ff6a3d;
+	--primary-text-color: #150734;
+	--primary-text-color: #030303;
 	--accent-color: #933D41;
 	--accent-color: #78244C;
 	--accent-color: #59253A;
 	--accent-color: #895061;
 	--accent-color: #2D4159;
 	--accent-color: #464866;
-	
+
 	--accent-color: #3B444B;
 	--accent-color: #36454F;
 	--accent-color: #0677A1;
@@ -68,7 +207,7 @@
 	--accent-color: #625D5D;
 	--accent-color: #504A4B;
 	--accent-color: #79616f;
-	
+
 	--accent-color: #008f95;
 	--accent-color: #e24e42;
 	--accent-color: #88bbd6;
@@ -78,10 +217,158 @@
 	--accent-color: #96858f;
 	--accent-color: #6c648b;
 	--accent-color: #cd5360;
-	
+
 	--accent-color: #0b3c5d;
 	--accent-color: #b37d4e;
 	--accent-color: #e24e42;
+	--accent-color: #df4c73;
+	--accent-color: #e2008a;
+	--accent-color: #db0038;
+	--accent-color: #43455c;
+
+	--accent-color: #343f71;
+	--accent-color: #3c1874;
+	--accent-color: #004e7c;
+	--accent-color: #932432;
+
+	--accent-color: #a0006d;
+	--accent-color: #0D3C8E;
+	--accent-color: #4A8BDF;
+	--accent-color: #4A8BDF;
+
+	--accent-color: #8E0D3C;
+	--accent-color: #9615db;
+	--accent-color: #408697;
+	--accent-color: #6f63ad;
+	--accent-color: #f53c88;
+	--accent-color: #563727;
+	--accent-color: #74431d;
+	--accent-color: #372c2e;
+	--accent-color: #692705;
+	--accent-color: #cf8b64;
+	--accent-color: #286f84;
+	--accent-color: #5A56A7;
+	--accent-color: #00A8FF;
+
+
+	--accent-color: #a239ca;
+	--accent-color: #4abdac;
+	--accent-color: #76323F;
+	--accent-color: #343f71;
+	--accent-color: #4e53a5;
+	--accent-color: #697184;
+	--accent-color: #062f4f;
+	--accent-color: #14365d;
+	--accent-color: #f7b733;
+	--accent-color: #565656;
+	--accent-color: #2F5C8F;
+	--accent-color: #A96762;
+
+	--accent-color: #4F4846;
+	--accent-color: #266150;
+	--accent-color: #007cc7;
+	--accent-color: #B73225;
+	--accent-color: #4da8da;
+	--accent-color: #0C1A1A;
+	--accent-color: #c89666;
+	--accent-color: #8076a3;
+
+	--accent-color: #9e363a;
+	
+	--accent-color: #5A0029;
+	--accent-color: #fecd45;
+	--accent-color: #a0aecd;
+	--accent-color: #490b3d;
+	--accent-color: #5252d4;
+	--accent-color: #2568fb;
+	--accent-color: #fa2742;
+	
+	--accent-color: #212221;
+	--accent-color: #c1436d;
+	--accent-color: #A9847D;
+	--accent-color: #926961;
+	--accent-color: #FBB825;
+	--accent-color: #FB25D3;
+	--accent-color: #fc5226;
+	--accent-color: #cd5360;
+	--accent-color: #932432;
+	--accent-color: #b87458;
+	--accent-color: #db423d;
+	--accent-color: #5ac3b0;
+	--accent-color: #f92c85;
+	--accent-color: #a0aecd;
+	--accent-color: #6e6e6e;
+	--accent-color: #ff6a3d;
+	--accent-color: #9daaf2;
+
+	--accent-color: #1a2238;
+	--accent-color: #394f8a;
+	--accent-color: #490b3d;
+	--accent-color: #f1b814;
+	--accent-color: #3fd2c7;
+	--accent-color: #00abe1;
+	--accent-color: #d48166;
+	--button-bg: #3756ff;
+	--button-bg: #45433e;
+	--button-bg: #2d3032;
+	--button-bg: #f53163;
+	--button-bg: #f34c19;
+	--button-bg: #ceb92c;
+	--button-bg: #ff5700;
+
+	--button-bg: #565656;
+	--button-bg: #3373F7;
+	--button-bg: #fc4a1a;
+	--button-bg: #c29591;
+	--button-bg: #7d94b5;
+	--button-bg: #2F5C8F;
+	--button-bg: #31525b;
+	--button-bg: #004E7C;
+	--button-bg: #266150;
+	--button-bg: #007cc7;
+	--button-bg: #2d545e;
+	--button-bg: #d85c27;
+	--button-bg: #203647;
+	--button-bg: #4F4846;
+	--button-bg: #b82601;
+	--button-bg: #76323F;
+	--button-bg: #FF5841;
+	--button-bg: #99775C;
+	--button-bg: #8E0D3C;
+
+	--button-bg: #fc5226;
+	--button-bg: #ff3a22;
+	--button-bg: #eb1736;
+	--button-bg: #781a44;
+	--button-bg: #5A0029;
+	
+	--button-bg: #bd1e51;
+	--button-bg: #4e3883;
+	
+	--button-bg: #28559a;
+	--button-bg: #329324;
+	--button-bg: #d18266;
+	--button-bg: #d1ab83;
+	--button-bg: #3DD6DB;
+	--button-bg: #249385;
+	--button-bg: #1181b2;
+	--button-bg: #369E9A;
+	--button-bg: #2568fb;
+	--button-bg: #09868b;
+	--button-bg: #373833;
+	--button-bg: #2a2a2a;
+	--button-bg: #f92c85;
+	--button-bg: #5ebec4;
+	--button-bg: #1a2238;
+	--button-bg: #de5935;
+	--button-bg: #4a5fc1;
+	--button-bg: #394f8a;
+	--button-bg: #bd1e51;
+	--button-bg: #00abe1;
+	--button-bg: #fb8122;
+	--button-bg: #373a36;
+	
+
 	--primary-color: #074095;
 	--primary-color: #0677A1;
 	--primary-color: #88bbd6;
@@ -90,13 +377,34 @@
 	--complementary-color: #121e26;
 	--headings-text-color: #2c2c2c;
 	--active-nav-desktop: #c6989a;
-	--active-nav-desktop: #0677A1;
 	--active-nav-desktop: #089BD2;
 	--active-nav-desktop: #17B9F6;
 	--active-nav-desktop: #8A7F8D;
 	--active-nav-desktop: #d2c0b2;
 	--active-nav-desktop: #9d8c96;
 	--active-nav-desktop: #b6a19e;
+	--active-nav-desktop: #9A4152;
+	--active-nav-desktop: #B85669;
+	--active-nav-desktop: #c09f80;
+	--active-nav-desktop: #4abdac;
+	--active-nav-desktop: #e1b382;
+	--active-nav-desktop: #7c677f;
+	--active-nav-desktop: #C0474C;
+	--active-nav-desktop: #7575dd;
+	--active-nav-desktop: #7575dd;
+	--active-nav-desktop: #fecd45;
+	--active-nav-desktop: #63bce5;
+	--active-nav-desktop: #c1436d;
+	--active-nav-desktop: #926961;
+	--active-nav-desktop: #A9847D;
+	--active-nav-desktop: #ACA68C;
+	--active-nav-desktop: #BC2E40;
+	--active-nav-desktop: #d18266;
+	--active-nav-desktop: #db423d;
+	--active-nav-desktop: #9daaf2;
+
+	--active-nav-desktop: #ff6a3d;
+	--active-nav-desktop: #d48166;
 
 	--active-nav-mobile: #074095;
 	--active-nav-mobile: #3D938F;

@@ -113,7 +113,7 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 							className={styles['carousel-img']}
 						/>
 					</AnimateContainer>
-					<AnimateContainer el='div' delay={1.5} duration={2} once>
+					<AnimateContainer el='div' delay={2} duration={3} once>
 						<div
 							className={`${styles.overlay}`}
 							onMouseEnter={() => setPauseAutoPlay(true)}

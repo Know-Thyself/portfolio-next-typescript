@@ -52,8 +52,8 @@
 
 .services-link {
 	background-color: var(--overlay-text-bg);
-	background-color: var(--button-bg);
 	background-color: var(--primary-bg);
+	background-color: var(--button-bg);
 	transition: transform 0.2s;
 	text-decoration: none;
 	padding: 0.5rem 1rem;
