@@ -6,6 +6,7 @@ import {
 	playfairDisplay,
 	playfairDisplayItalic,
 	montserrat,
+	oswald,
 } from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
@@ -45,12 +46,10 @@ export default function Navbar() {
 		>
 			<div className='container-fluid'>
 				<Link
-					className={`navbar-brand border-0 ${styles.brand} ${playfairDisplayItalic.className}`}
+					className={`navbar-brand border-0 ${styles.brand} ${montserrat.className}`}
 					href='/'
 				>
-					<span className={`${styles.initials} ${playfairDisplay.className}`}>
-						BK
-					</span>
+					<span className={styles.initials}>BK</span>
 					<span>Web Developer</span>
 				</Link>
 				<input

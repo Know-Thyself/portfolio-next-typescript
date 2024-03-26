@@ -1,9 +1,92 @@
 :root {
 	--header-bg: #343434;
-	--header-bg: #6c648b;
 	--header-bg: #0e0b16;
 	--header-bg: #1d2228;
 	--header-bg: #3c3c3c;
+	--header-bg: #00abe1;
+	--header-bg: #181818;
+	--header-bg: #2a3166;
+	--header-bg: #141824;
+	--header-bg: #191919;
+	--header-bg: #1a2238;
+	--header-bg: #001233;
+	--header-bg: #212221;
+	--header-bg: #413f3d;
+	--header-bg: #372c2e;
+
+	--header-bg: #161b40;
+	--header-bg: #363538;
+	--header-bg: #2e3047;
+	--header-bg: #2d3032;
+	--header-bg: #19171a;
+	--header-bg: #000000;
+	--header-bg: #283747;
+	--header-bg: #12232e;
+	--header-bg: #202020;
+	--header-bg: #1d2731;
+	--header-bg: #0f1626;
+	--header-bg: #031424;
+	--header-bg: #192231;
+	--header-bg: #18121e;
+	--header-bg: #233237;
+	--header-bg: #222222;
+	--header-bg: #262b25;
+	--header-bg: #144058;
+	--header-bg: #172d13;
+	--header-bg: #051622;
+	--header-bg: #1a2238;
+	--header-bg: #1d2228;
+	
+	/* cool gray */
+	--brand-color: #c6989a;
+	--brand-color: #2568fb;
+	--brand-color: #ff6a3d;
+	--brand-color: #7d3780;
+	--brand-color: #fe4a49;
+	--brand-color: #e1e2e2;
+	--brand-color: #ddedf4;
+	--brand-color: #f9faf4;
+	--brand-color: #7a431d;
+	--brand-color: #43bee5;
+	--brand-color: #f6f6f6;
+	--brand-color: #707793;
+	--brand-color: #d2d3d3;
+	--brand-color: #E58D2E;
+	--brand-color: #f4db7d;
+	--brand-color: #fb8122;
+
+	--brand-initials-color: #2568fb;
+	--brand-initials-color: #1ba098;
+	--brand-initials-color: #2cccc3;
+	--brand-initials-color: #ee7879;
+	--brand-initials-color: #e9bd43;
+	--brand-initials-color: #fab162;
+	--brand-initials-color: #fb8122;
+	--brand-initials-color: #1181b2;
+	--brand-initials-color: #ff595a;
+	--brand-initials-color: #f17a7e;
+	--brand-initials-color: #52d6f4;
+	--brand-initials-color: #9615db;
+	--brand-initials-color: #3bba9c;
+	--brand-initials-color: #de9e48;
+	--brand-initials-color: #e9322e;
+	--brand-initials-color: #007cc7;
+	--brand-initials-color: #ffdf6c;
+	--brand-initials-color: #4da8da;
+	--brand-initials-color: #d9b310;
+	--brand-initials-color: #985e6d;
+	--brand-initials-color: #de354c;
+	--brand-initials-color: #db5c27;
+	--brand-initials-color: #c1436d;
+	--brand-initials-color: #984b43;
+	--brand-initials-color: #e95d2a;
+	--brand-initials-color: #328cc1;
+	--brand-initials-color: #f65215;
+	--brand-initials-color: #a78444;
+	--brand-initials-color: #e6c17a;
+	--brand-initials-color: #DF3C5F;
+	--brand-initials-color: #DD671E;
+	--brand-initials-color: #ff6a3d;
 	--body-bg: #d5d5d5;
 	--body-bg: #d7cec7;
 	--body-bg: #b6a19e;
@@ -18,90 +101,11 @@
 	--body-bg: #f2f1ef;
 	--body-bg: #d7cec7;
 	--body-bg: #e8eae3;
+	--body-bg: #cae7df;
 	--body-bg: #f7efee;
-	--button-bg: #fba100;
-	--button-bg: #07889b;
-	--button-bg: #f7882f;
-	--button-bg: #6b7a8f;
-	--button-bg: #286da8;
-	--button-bg: #438496;
-	--button-bg: #3E6A90;
-	--button-bg: #00ABE4;
-	--button-bg: #2272FF;
-
-	--button-bg: #4e53a5;
-	--button-bg: #3bba9c;
-	--button-bg: #343f71;
-
-	--button-bg: #3c1874;
-	--button-bg: #b73225;
-	--button-bg: #007cc7;
-	--button-bg: #249385;
-	--button-bg: #4a8bdf;
-	--button-bg: #8E0D3C;
-	--button-bg: #A0006D;
-	--button-bg: #f34c19;
-	--button-bg: #f7c200;
-	--button-bg: #178582;
-	--button-bg: #E7473C;
-	--button-bg: #2272FF;
-
-
-	--button-bg: #323232;
-	--button-bg: #00abe4;
-	--button-bg: #4a8bdf;
-	--button-bg: #408697;
-	--button-bg: #6f63ad;
-
-	--button-bg: #3756ff;
-	/* cool gray */
-	--brand-color: #c6989a;
-	--brand-color: #895061;
-	--brand-color: #089BD2;
-	--brand-color: #17B9F6;
-	--brand-color: #8A7F8D;
-	--brand-color: #487aff;
-	--brand-color: #d2c0b2;
-	--brand-color: #9d8c96;
-	--brand-color: #cdcdcd;
-	--brand-color: #99d3df;
-	--brand-color: #b6a19e;
-	--brand-color: #e9d8e4;
-	--brand-color: #cf8b64;
-
-	--brand-color: #b1a6a4;
-	--brand-color: #c09f80;
-	--brand-color: #B85669;
-	--brand-color: #9e15bf;
-	--brand-color: #cae7df;
-	--brand-color: #7ed5ea;
-	--brand-color: #4b9fe1;
-	--brand-color: #646c79;
-	
-	--brand-color: #7da2a9;
-	
-	--brand-color: #8C92AC;
-	--brand-color: #ACA68C;
-	--brand-color: #4AD3C1;
-	--brand-color: #3DD6DB;
-	--brand-color: #DB913D;
-	--brand-color: #e95d2a;
-
-	--brand-color: #d76f30;
-	--brand-color: #9daaf2;
-
-	--brand-initials-color: #cae7df;
-	--brand-initials-color: #f4abaa;
-	--brand-initials-color: #926961;
-	--brand-initials-color: #ACA68C;
-	--brand-initials-color: #A9847D;
-	--brand-initials-color: #4ac6d2;
-	--brand-initials-color: #c1436d;
-	--brand-initials-color: #BC2E40;
-	--brand-initials-color: #D34A5C;
-	--brand-initials-color: #db423d;
-	--brand-initials-color: #DB913D;
-	--brand-initials-color: #9daaf2;
+	--body-bg: #45433e;
+	--body-bg: #959794;
+	--body-bg: #e1e2e2;
 	--primary-bg: #98C6C4;
 	--primary-bg: #0677A1;
 	--primary-bg: #d2c0b2;
@@ -177,6 +181,16 @@
 	--primary-bg: #1a2238;
 	--primary-bg: #d48166;
 
+	--primary-bg: #deb992;
+	--primary-bg: #303030;
+	--primary-bg: #2a2a2a;
+	--primary-bg: #3c3c3c;
+	--primary-bg: #1ba098;
+	--primary-bg: #2a3166;
+	--primary-bg: #182978;
+	--primary-bg: #191919;
+	--primary-bg: #fb8122;
+
 	--primary-text-color: #ffffff;
 	--primary-text-color: #e1ea35;
 	--primary-text-color: #8E0D3C;
@@ -193,6 +207,23 @@
 	--primary-text-color: #ff6a3d;
 	--primary-text-color: #150734;
 	--primary-text-color: #030303;
+	--primary-text-color: #051622;
+	--primary-text-color: #deb992;
+	--primary-text-color: #d48166;
+	--primary-text-color: #1ba098;
+	--primary-text-color: #ee7879;
+	--primary-text-color: #11abc1;
+	--primary-text-color: #5843c1;
+	--primary-text-color: #1d2228;
+	--secondary-text-color: #d48166;
+	--secondary-text-color: #deb992;
+	--secondary-text-color: #cae7df;
+	--secondary-text-color: #f4abaa;
+	--secondary-text-color: #ee7879;
+
+	--secondary-text-color: #c1436d;
+
+	--secondary-text-color: #1d2228;
 	--accent-color: #933D41;
 	--accent-color: #78244C;
 	--accent-color: #59253A;
@@ -298,75 +329,73 @@
 	--accent-color: #f92c85;
 	--accent-color: #a0aecd;
 	--accent-color: #6e6e6e;
-	--accent-color: #ff6a3d;
 	--accent-color: #9daaf2;
-
+	
 	--accent-color: #1a2238;
 	--accent-color: #394f8a;
 	--accent-color: #490b3d;
 	--accent-color: #f1b814;
 	--accent-color: #3fd2c7;
 	--accent-color: #00abe1;
+	--accent-color: #deb992;
 	--accent-color: #d48166;
+	--accent-color: #ee7879;
+
+	--accent-color: #c1436d;
+	--accent-color: #CD9C8A;
+	--accent-color: #ff595a;
+	--accent-color: #e9322e;
+	--accent-color: #ff6a3d;
+	--accent-color: #fb8122;
+
 	--button-bg: #3756ff;
 	--button-bg: #45433e;
 	--button-bg: #2d3032;
-	--button-bg: #f53163;
-	--button-bg: #f34c19;
-	--button-bg: #ceb92c;
-	--button-bg: #ff5700;
-
+	
 	--button-bg: #565656;
 	--button-bg: #3373F7;
-	--button-bg: #fc4a1a;
-	--button-bg: #c29591;
-	--button-bg: #7d94b5;
-	--button-bg: #2F5C8F;
-	--button-bg: #31525b;
-	--button-bg: #004E7C;
-	--button-bg: #266150;
-	--button-bg: #007cc7;
-	--button-bg: #2d545e;
-	--button-bg: #d85c27;
-	--button-bg: #203647;
-	--button-bg: #4F4846;
-	--button-bg: #b82601;
-	--button-bg: #76323F;
-	--button-bg: #FF5841;
-	--button-bg: #99775C;
-	--button-bg: #8E0D3C;
-
-	--button-bg: #fc5226;
-	--button-bg: #ff3a22;
-	--button-bg: #eb1736;
-	--button-bg: #781a44;
-	--button-bg: #5A0029;
-	
-	--button-bg: #bd1e51;
-	--button-bg: #4e3883;
 	
 	--button-bg: #28559a;
+	--button-bg: #de5935;
+	--button-bg: #4a5fc1;
+	--button-bg: #394f8a;
 	--button-bg: #329324;
-	--button-bg: #d18266;
-	--button-bg: #d1ab83;
+	--button-bg: #5ebec4;
+	--button-bg: #00abe1;
 	--button-bg: #3DD6DB;
 	--button-bg: #249385;
 	--button-bg: #1181b2;
 	--button-bg: #369E9A;
 	--button-bg: #2568fb;
-	--button-bg: #09868b;
-	--button-bg: #373833;
-	--button-bg: #2a2a2a;
-	--button-bg: #f92c85;
-	--button-bg: #5ebec4;
-	--button-bg: #1a2238;
-	--button-bg: #de5935;
-	--button-bg: #4a5fc1;
-	--button-bg: #394f8a;
-	--button-bg: #bd1e51;
-	--button-bg: #00abe1;
+	--button-bg: #1ba098;
+	--button-bg: #11abc1;
+	
+	--button-bg: #6DC143;
+	--button-bg: #436DC1;
 	--button-bg: #fb8122;
 	--button-bg: #373a36;
+	--button-bg: #5843C1;
+	--button-bg: #5ebec4;
+	--button-bg: #3fd2c7;
+	--button-bg: #09868b;
+	--button-bg: #11abc1;
+	--button-bg: #00abe4;
+	--button-bg: #2272FF;
+	--button-bg: #ff6a3d;
+	--button-bg: #ceb92c;
+	--button-bg: #ff5700;
+	--button-bg: #f53163;
+	--button-bg: #f34c19;
+	--button-bg: #ff5100;
+	--button-bg: #1a2238;
+	--button-bg: #381A31;
+	--button-bg: #1A3138;
+	--button-bg: #1A3138;
+	--button-bg: #44449b;
+	--button-bg: #2EE5E9;
+	--button-bg: #4da8da;
+	--button-bg: #1ba098;
+	
 	
 
 	--primary-color: #074095;
@@ -405,6 +434,14 @@
 
 	--active-nav-desktop: #ff6a3d;
 	--active-nav-desktop: #d48166;
+	--active-nav-desktop: #cae7df;
+	--active-nav-desktop: #ee7879;
+	
+	--active-nav-desktop: #c1436d;
+	--active-nav-desktop: #4da8da;
+	--active-nav-desktop: #E58D2E;
+	--active-nav-desktop: #ff6a3d;
+	--active-nav-desktop: #fb8122;
 
 	--active-nav-mobile: #074095;
 	--active-nav-mobile: #3D938F;

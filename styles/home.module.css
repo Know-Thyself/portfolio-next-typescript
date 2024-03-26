@@ -43,14 +43,14 @@
 	height: auto;
 }
 
-.services-link-wrapper {
+.projects-link-wrapper {
 	display: flex;
 	position: relative;
 	justify-content: center;
 	padding: 2.5%;
 }
 
-.services-link {
+.projects-link {
 	background-color: var(--overlay-text-bg);
 	background-color: var(--primary-bg);
 	background-color: var(--button-bg);
@@ -62,7 +62,7 @@
 	color: var(--overlay-text-color);
 }
 
-.services-link:hover {
+.projects-link:hover {
 	transform: scale(1.2);
 	cursor: pointer;
 }
@@ -79,7 +79,7 @@
 
 	.intro-section,
 	.overview {
-		padding: 0 2.5%;
+		padding: 0 5%;
 	}
 
 	.title {
@@ -117,24 +117,27 @@
 	}
 
 	.field {
-		font-size: 6rem;
+		font-size: 4rem;
 		font-weight: 900;
 	}
 
 	.highlight {
 		padding: 0 2rem;
 		font-size: 1.5rem;
+		color: var(--secondary-text-color);
 	}
 
 	.image,
 	.text-wrapper {
-		height: 420px;
+		height: 340px;
 	}
 
-	.services-link {
+	.projects-link {
 		padding: 1rem 1.5rem;
 		border-radius: 60px;
+		font-weight: 500;
 	}
+
 }
 
 /* Enable hover only on non-touch devices */

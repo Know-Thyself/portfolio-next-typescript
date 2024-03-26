@@ -1,4 +1,4 @@
-import { Playfair_Display, Montserrat } from 'next/font/google'
+import { Playfair_Display, Montserrat, Oswald } from 'next/font/google'
 
 const playfairDisplay = Playfair_Display({
 	subsets: ['latin'],
@@ -23,4 +23,6 @@ const montserrat = Montserrat({
 	preload: true,
 })
 
-export { playfairDisplay, playfairDisplayItalic, montserrat }
+const oswald = Oswald({ subsets: ['latin'], display: 'swap', preload: true })
+
+export { playfairDisplay, playfairDisplayItalic, montserrat, oswald }

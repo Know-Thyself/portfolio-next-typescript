@@ -49,6 +49,7 @@ export default function Home({
 	intro: IntroProps
 	portfolio: PortfolioProps[]
 }) {
+	hero.sort((a, b) => a.id - b.id)
 	return (
 		<main className={styles.main}>
 			<Carousel hero={hero} />
@@ -87,7 +88,7 @@ export default function Home({
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? 200 : -200}
-							delay={0.5}
+							delay={0.5 + index}
 							duration={1.5}
 							once
 							className={styles['text-animation-container']}
@@ -117,7 +118,7 @@ export default function Home({
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? -200 : 200}
-							delay={0.5}
+							delay={0.5 + index}
 							duration={1.5}
 							once
 						>
@@ -141,8 +142,8 @@ export default function Home({
 						</AnimateContainer>
 					</div>
 				))}
-				<div className={styles['services-link-wrapper']}>
-					<Link href='/services' className={`${styles['services-link']}`}>
+				<div className={styles['projects-link-wrapper']}>
+					<Link href='/projects' className={`${styles['projects-link']}`}>
 						<span className={montserrat.className}>Checkout My Services</span>
 					</Link>
 				</div>

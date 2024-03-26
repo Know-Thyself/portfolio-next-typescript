@@ -14,6 +14,11 @@
 	writing-mode: vertical-lr;
 	font-weight: 700;
 	color: var(--brand-initials-color);
+	border: 1px dashed var(--brand-color);
+	border: 1px solid var(--brand-initials-color);
+	border: 1px solid var(--brand-color);
+	padding: 0.25rem;
+	margin-right: 0.5rem;
 }
 
 .brand {
@@ -142,6 +147,11 @@
 @media screen and (min-width: 768px) {
 	.initials {
 		font-size: 1.5rem;
+	}
+
+	.brand {
+		font-size: 1.25rem;
+		font-weight: 200;
 	}
 
 	.menu__box {
