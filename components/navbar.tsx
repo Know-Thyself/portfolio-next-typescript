@@ -7,6 +7,7 @@ import {
 	playfairDisplayItalic,
 	montserrat,
 	oswald,
+	raleway,
 } from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
@@ -17,6 +18,7 @@ export default function Navbar() {
 	const [toggleMenu, setToggleMenu] = useState(false)
 	const [isChecked, setIsChecked] = useState(false)
 	const [screenWidth, setScreenWidth] = useState(1348)
+	const links = ['home', 'projects', 'about', 'contact']
 
 	const toggleNav = () => {
 		setToggleMenu(!toggleMenu)
@@ -44,13 +46,14 @@ export default function Navbar() {
 			className={`${styles['custom-header']} navbar navbar-expand-md border-0 fixed-top`}
 			data-bs-theme='dark'
 		>
-			<div className='container-fluid'>
+			<div className={`container-fluid ${styles['nav-container']}`}>
 				<Link
-					className={`navbar-brand border-0 ${styles.brand} ${montserrat.className}`}
+					className={`navbar-brand border-0 ms-md-5 ${styles.brand} ${raleway.className}`}
 					href='/'
 				>
-					<span className={styles.initials}>BK</span>
-					<span>Web Developer</span>
+					<span>Web</span>
+					<span className={`${styles.initials}`}>BK</span>
+					<span>Developer</span>
 				</Link>
 				<input
 					id='menu__toggle'
@@ -64,72 +67,28 @@ export default function Navbar() {
 				</label>
 				{(toggleMenu || screenWidth > 767) && (
 					<nav
-						className={`text-center me-auto me-md-5 ${styles['menu__box']} ${montserrat.className}`}
+						className={`text-center me-md-5 ${styles['menu__box']} ${raleway.className}`}
 					>
-						<ul
-							className={`navbar-nav ms-auto border-0 ${styles['menu__box__ul']}`}
-						>
-							<li className={`nav-item me-1 ${styles['custom-nav-item']}`}>
-								<Link
-									href='/'
-									className={`nav-link p-3 border-start-0 border-end-0 text-light ${
-										pathname === '/' ? styles.active : styles['menu__item']
-									}`}
-									onClick={screenTest}
+						<ul className={`navbar-nav border-0 ${styles['menu__box__ul']}`}>
+							{links.map((link, index) => (
+								<li
+									key={index}
+									className={`nav-item me-1 ${styles['custom-nav-item']}`}
 								>
-									<span>Home</span>
-								</Link>
-							</li>
-							<li className={`nav-item me-1 ${styles['custom-nav-item']}`}>
-								<Link
-									href='/services'
-									className={`nav-link p-3 border-start-0 border-end-0 text-light ${
-										pathname === '/services'
-											? styles.active
-											: styles['menu__item']
-									}`}
-									onClick={screenTest}
-								>
-									<span>Services</span>
-								</Link>
-							</li>
-							<li className={`nav-item me-1 ${styles['custom-nav-item']}`}>
-								<Link
-									href='/projects'
-									className={`nav-link p-3 border-start-0 border-end-0 text-light ${
-										pathname === '/projects'
-											? styles.active
-											: styles['menu__item']
-									}`}
-									onClick={screenTest}
-								>
-									<span>Projects</span>
-								</Link>
-							</li>
-							<li className={`nav-item me-1 ${styles['custom-nav-item']}`}>
-								<Link
-									href='/about'
-									className={`nav-link p-3 border-start-0 border-end-0 text-light ${
-										pathname === '/about' ? styles.active : styles['menu__item']
-									}`}
-									onClick={screenTest}
-								>
-									<span>About</span>
-								</Link>
-							</li>
-							<li className={`nav-item ${styles['custom-nav-item']}`}>
-								<Link
-									href='/contact'
-									className={`nav-link p-3 border-start-0 text-light ${
-										pathname === '/contact'
-											? styles.active
-											: styles['menu__item']
-									}`}
-									onClick={screenTest}
-								>
-									<span>Contact</span>
-								</Link>
-							</li>
+									<Link
+										href={link === 'home' ? '/' : `/${link}`}
+										className={`nav-link px-2 text-light ${
+											pathname === `/${link}` ||
+											(pathname === '/' && link === 'home')
+												? styles.active
+												: styles['menu__item']
+										}`}
+										onClick={screenTest}
+									>
+										<span>{link}</span>
+									</Link>
+								</li>
+							))}
 						</ul>
 					</nav>
 				)}

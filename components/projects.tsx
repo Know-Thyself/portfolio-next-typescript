@@ -1,5 +1,5 @@
 import styles from '@/styles/projects.module.css'
-import { playfairDisplay } from '@/styles/fonts'
+import { playfairDisplay, playfairDisplayItalic, raleway } from '@/styles/fonts'
 
 export default function ProjectsComponent() {
 	return (

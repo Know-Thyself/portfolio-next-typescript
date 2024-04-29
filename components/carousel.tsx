@@ -11,6 +11,7 @@ import {
 	playfairDisplay,
 	playfairDisplayItalic,
 	montserrat,
+	raleway,
 } from '@/styles/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -127,17 +128,17 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 										{hero[currentIndex].field}
 									</h1>
 									<h2
-										className={`text-center ${playfairDisplay.className} ${styles['hero-highlight']}`}
+										className={`text-center ${raleway.className} ${styles['hero-highlight']}`}
 									>
 										{hero[currentIndex].highlight}
 									</h2>
 								</div>
 								<div className={styles.links}>
 									<Link href='/services' className={`${styles.link}`}>
-										<span className={montserrat.className}>My Services</span>
+										<span className={raleway.className}>My Services</span>
 									</Link>
 									<Link href='/about' className={`${styles.link}`}>
-										<span className={montserrat.className}>About Me</span>
+										<span className={raleway.className}>About Me</span>
 									</Link>
 								</div>
 							</div>

@@ -2,6 +2,7 @@ import {
 	playfairDisplay,
 	montserrat,
 	playfairDisplayItalic,
+	raleway,
 } from '@/styles/fonts'
 import AnimateCharacters from '@/animations/animate-characters'
 import AnimateContainer from '@/animations/animate-container'
@@ -57,7 +58,7 @@ export default function Home({
 				<AnimateCharacters
 					text={intro.greeting}
 					el='h1'
-					className={`${styles.title} ${playfairDisplay.className}`}
+					className={`${styles.title} ${raleway.className}`}
 					delay={0.5}
 					duration={1}
 					rotateX={180}
@@ -65,7 +66,7 @@ export default function Home({
 					once
 				/>
 				<div>
-					<p className={`${styles.intro} ${montserrat.className}`}>
+					<p className={`${styles.intro} ${raleway.className}`}>
 						<span
 							className={`${styles.name} ${playfairDisplayItalic.className}`}
 						>
@@ -88,7 +89,7 @@ export default function Home({
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? 200 : -200}
-							delay={0.5 + index}
+							delay={0.5}
 							duration={1.5}
 							once
 							className={styles['text-animation-container']}
@@ -97,7 +98,7 @@ export default function Home({
 								<AnimateCharacters
 									el='h1'
 									text={item.field}
-									className={`${styles.field} ${playfairDisplay.className}`}
+									className={`${styles.field} ${playfairDisplayItalic.className}`}
 									rotateY={180}
 									rotateX={180}
 									delay={2.5}
@@ -111,14 +112,14 @@ export default function Home({
 									delay={3.5}
 									once
 									duration={1}
-									className={`${styles.highlight} ${playfairDisplayItalic.className}`}
+									className={`${styles.highlight} ${raleway.className}`}
 								/>
 							</div>
 						</AnimateContainer>
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? -200 : 200}
-							delay={0.5 + index}
+							delay={0.5}
 							duration={1.5}
 							once
 						>
@@ -144,7 +145,7 @@ export default function Home({
 				))}
 				<div className={styles['projects-link-wrapper']}>
 					<Link href='/projects' className={`${styles['projects-link']}`}>
-						<span className={montserrat.className}>Checkout My Services</span>
+						<span className={raleway.className}>Checkout My Projects</span>
 					</Link>
 				</div>
 			</section>
