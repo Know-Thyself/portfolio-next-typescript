@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootswatch/dist/flatly/bootstrap.min.css'
+import { raleway } from '@/styles/fonts'
 import '../styles/globals.css'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body>
+			<body className={raleway.className}>
 				<Navbar />
 				{children}
 				<Footer />

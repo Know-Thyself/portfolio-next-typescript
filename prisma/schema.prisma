@@ -36,3 +36,12 @@ model portfolio {
     description String   @db.Text
     logos       String[]
 }
+
+model project {
+    id         Int    @id @default(autoincrement())
+    title      String @db.VarChar(255)
+    image      String @db.VarChar(255)
+    summary    String @db.Text
+    demo       String @db.VarChar(255)
+    repository String @db.VarChar(255)
+}

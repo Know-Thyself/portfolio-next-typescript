@@ -1,4 +1,4 @@
-.custom-header {
+.header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -6,65 +6,45 @@
 	height: 74px;
 	z-index: 3;
 	background-color: var(--header-bg);
-	/* display: flex;
-	align-items: center; */
-	/* align-items: center; */
 }
 
-/* .nav-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
-
-
 .brand {
-	/* margin-left: 1rem; */
-	/* position: absolute;
-	top: 10;
-	left: 0; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	align-self: center;
-	/* color: var(--brand-color) !important; */
 	font-weight: 300;
-	/* height: 74px; */
 	height: 40px;
 	background-color: #1ba098;
 	color: var(--brand-bg) !important;
 	background-color: var(--primary-light);
 	padding: 0 0.5rem;
-	/* margin: 0; */
+	box-shadow: var(--brand-bg) 0px 2px 4px 0px, var(--brand-bg) 0px 2px 16px 0px;
+	box-shadow: var(--brand-bg) 0px 0px 0px 3px;
+	border-radius: 78px;
 }
 
 .initials {
 	writing-mode: vertical-rl;
 	writing-mode: vertical-lr;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 700;
 	color: var(--primary-light);
 	color: var(--brand-color);
-	/* padding: 0.25rem; */
 	margin: 0 0.3rem;
 	background-color: var(--accent-color);
 	background-color: var(--brand-bg);
-	/* height: 74px; */
 	width: 40px;
-	height: 74PX;
+	height: 64PX;
 	padding: 0.5rem 0;
-	/* padding-left: 0.15rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-self: center;
-}
+	letter-spacing: 2px;
+	text-align: center;
 
-/* .logo {
-	height: 64px;
-	width: auto;
-	align-self: center;
-} */
+	box-shadow: var(--brand-color) 0px 2px 4px 0px, var(--brand-color) 0px 2px 16px 0px;
+	box-shadow: var(--brand-color) 0px 5px 15px;
+}
 
 /* hamburger menu */
 .menu__toggle {
@@ -178,12 +158,12 @@
 
 @media screen and (min-width: 768px) {
 	.initials {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 
 	.brand {
-		font-size: 1.5rem;
-		font-weight: 600;
+		font-size: 1.75rem;
+		font-weight: 700;
 	}
 
 	.menu__box {
@@ -200,7 +180,7 @@
 	}
 
 	.custom-nav-item .active {
-		border-bottom: 2px solid var(--accent-color);
+		border-bottom: 2px solid var(--button-bg);
 		border-bottom: 2px solid var(--accent-color);
 		color: var(--primary-light) !important;
 		/* color: var(--accent-color) !important; */
@@ -208,7 +188,7 @@
 	}
 
 	.menu__item:hover {
-		border-bottom: 2px solid var(--accent-color) !important;
+		border-bottom: 2px solid var(--button-bg) !important;
 		border-bottom: 2px solid var(--accent-color) !important;
 		color: var(--primary-light) !important;
 		/* color: var(--accent-color) !important; */

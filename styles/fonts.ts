@@ -24,7 +24,7 @@ const montserrat = Montserrat({
 })
 
 const raleway = Raleway({
-	subsets: ['latin'],
+	subsets: ['cyrillic'],
 	weight: 'variable',
 	display: 'swap',
 	preload: true,

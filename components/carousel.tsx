@@ -7,12 +7,7 @@ import {
 	faChevronCircleLeft,
 	faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons'
-import {
-	playfairDisplay,
-	playfairDisplayItalic,
-	montserrat,
-	raleway,
-} from '@/styles/fonts'
+import { playfairDisplayItalic } from '@/styles/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import blackPinkImage from '@/public/images/hero/black-pink.png'
@@ -127,18 +122,16 @@ const Carousel = ({ hero }: { hero: HeroProps[] }) => {
 									>
 										{hero[currentIndex].field}
 									</h1>
-									<h2
-										className={`text-center ${raleway.className} ${styles['hero-highlight']}`}
-									>
+									<h2 className={`text-center ${styles['hero-highlight']}`}>
 										{hero[currentIndex].highlight}
 									</h2>
 								</div>
 								<div className={styles.links}>
 									<Link href='/services' className={`${styles.link}`}>
-										<span className={raleway.className}>My Services</span>
+										My Services
 									</Link>
 									<Link href='/about' className={`${styles.link}`}>
-										<span className={raleway.className}>About Me</span>
+										About Me
 									</Link>
 								</div>
 							</div>

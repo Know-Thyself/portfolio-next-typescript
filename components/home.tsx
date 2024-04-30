@@ -1,9 +1,4 @@
-import {
-	playfairDisplay,
-	montserrat,
-	playfairDisplayItalic,
-	raleway,
-} from '@/styles/fonts'
+import { playfairDisplayItalic } from '@/styles/fonts'
 import AnimateCharacters from '@/animations/animate-characters'
 import AnimateContainer from '@/animations/animate-container'
 import AnimateWords from '@/animations/animate-words'
@@ -58,7 +53,7 @@ export default function Home({
 				<AnimateCharacters
 					text={intro.greeting}
 					el='h1'
-					className={`${styles.title} ${raleway.className}`}
+					className={styles.title}
 					delay={0.5}
 					duration={1}
 					rotateX={180}
@@ -66,7 +61,7 @@ export default function Home({
 					once
 				/>
 				<div>
-					<p className={`${styles.intro} ${raleway.className}`}>
+					<p className={styles.intro}>
 						<span
 							className={`${styles.name} ${playfairDisplayItalic.className}`}
 						>
@@ -89,7 +84,7 @@ export default function Home({
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? 200 : -200}
-							delay={0.5}
+							delay={0.5 + index / 2}
 							duration={1.5}
 							once
 							className={styles['text-animation-container']}
@@ -112,14 +107,14 @@ export default function Home({
 									delay={3.5}
 									once
 									duration={1}
-									className={`${styles.highlight} ${raleway.className}`}
+									className={styles.highlight}
 								/>
 							</div>
 						</AnimateContainer>
 						<AnimateContainer
 							el='div'
 							x={index % 2 ? -200 : 200}
-							delay={0.5}
+							delay={0.5 + index / 2}
 							duration={1.5}
 							once
 						>
@@ -144,8 +139,8 @@ export default function Home({
 					</div>
 				))}
 				<div className={styles['projects-link-wrapper']}>
-					<Link href='/projects' className={`${styles['projects-link']}`}>
-						<span className={raleway.className}>Checkout My Projects</span>
+					<Link href='/projects' className={styles['projects-link']}>
+						Checkout My Projects
 					</Link>
 				</div>
 			</section>

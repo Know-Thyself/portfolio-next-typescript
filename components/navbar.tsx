@@ -2,13 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import {
-	playfairDisplay,
-	playfairDisplayItalic,
-	montserrat,
-	oswald,
-	raleway,
-} from '@/styles/fonts'
+import { playfairDisplay, playfairDisplayItalic } from '@/styles/fonts'
 import { usePathname } from 'next/navigation'
 import styles from '@/styles/navbar.module.css'
 import 'bootswatch/dist/sandstone/bootstrap.min.css'
@@ -43,17 +37,17 @@ export default function Navbar() {
 
 	return (
 		<header
-			className={`${styles['custom-header']} navbar navbar-expand-md border-0 fixed-top`}
+			className={`${styles.header} navbar navbar-expand-md border-0 fixed-top`}
 			data-bs-theme='dark'
 		>
 			<div className={`container-fluid ${styles['nav-container']}`}>
 				<Link
-					className={`navbar-brand border-0 ms-md-5 ${styles.brand} ${raleway.className}`}
+					className={`navbar-brand border-0 ms-md-5 ${styles.brand}`}
 					href='/'
 				>
-					<span>Web</span>
-					<span className={`${styles.initials}`}>BK</span>
-					<span>Developer</span>
+					<span className={playfairDisplayItalic.className}>Web</span>
+					<span className={styles.initials}>BK</span>
+					<span className={playfairDisplayItalic.className}>Developer</span>
 				</Link>
 				<input
 					id='menu__toggle'
@@ -66,9 +60,7 @@ export default function Navbar() {
 					<span></span>
 				</label>
 				{(toggleMenu || screenWidth > 767) && (
-					<nav
-						className={`text-center me-md-5 ${styles['menu__box']} ${raleway.className}`}
-					>
+					<nav className={`text-center me-md-5 ${styles['menu__box']}`}>
 						<ul className={`navbar-nav border-0 ${styles['menu__box__ul']}`}>
 							{links.map((link, index) => (
 								<li

@@ -72,14 +72,20 @@
 	--accent-color: #900C40;
 
 	--button-bg: #2F7249;
-	--button-bg: #2568fb;
 	--button-bg: #3756ff;
 	--button-bg: #45433e;
 	--button-bg: #2d3032;
-	--button-bg: #3F88C3;
 	--button-bg: #316D9E;
 	--button-bg: #08613E;
+	--button-bg: #2568fb;
 	--button-bg: #085761;
+
+	--button-bg: #0C905C;
+
+	--button-bg: #8DB8DB;
+	--button-bg: #66A0CF;
+	--button-bg: #3F88C3;
+	--button-bg: #3F46C3;
 
 	--primary-color: #88bbd6;
 	--primary-color: #8DB8DB;
