@@ -25,6 +25,7 @@
 	--brand-bg: #1181b2;
 	--brand-bg: #001730;
 	--brand-bg: #61082b;
+	--brand-bg: #051622;
 	--primary-dark: #61082b;
 
 
@@ -36,6 +37,7 @@
 	--brand-color: #f4db7d;
 	--brand-color: #fe4a49;
 	--brand-color: #4ad7d1;
+	--brand-color: #deb992;
 	--brand-color: #b4d0e7;
 	--primary-light: #b4d0e7;
 	--primary-light: #f4db7d;
@@ -50,17 +52,35 @@
 	--primary-light: #44449b;
 
 	--primary-light: #4ad7d1;
+	--primary-light: #1ba098;
+	--primary-light: #E9BD43;
+	--primary-light: #B4E7E5;
+	--primary-light: #ddedf4;
+	--primary-light: #deb992;
 	--primary-light: #b4d0e7;
 
 	--body-bg: #e1e2e2;
 	--body-bg: #E7CBB4;
-	--body-bg: #E7CBB4;
+	--body-bg: #ffffff;
 	--primary-bg: #ab274f;
 	--primary-bg: #286da8;
 	--primary-bg: #932432;
 	--primary-bg: #722F37;
 
 	--primary-bg: #2568fb;
+	--complementary-color: #0C905C;
+	--complementary-color: #1A0C90;
+	--complementary-color: #3F88C3;
+	--complementary-color: #0C8290;
+	--complementary-color: #121e26;
+	--complementary-color: #3B032F;
+	--complementary-color: #8DB8DB;
+	--complementary-color: #66A0CF;
+	--complementary-color: #fb8122;
+	--complementary-color: #d48166;
+	--complementary-color: #1ba098;
+	--complementary-color: #1181b2;
+	--complementary-color: #61082b;
 	--primary-text-color: #f4db7d;
 	--primary-text-color: #1F2022;
 	--secondary-text-color: #ee7879;
@@ -92,13 +112,7 @@
 	--primary-color: #E7CBB4;
 	--primary-color: #DB8DB8;
 	--secondary-color: #933D41;
-	--complementary-color: #121e26;
 	--headings-text-color: #2c2c2c;
-	--complementary-color: #3B032F;
-	--primary-light: #1ba098;
-	--primary-light: #E9BD43;
-	--primary-light: #B4E7E5;
-	--primary-light: #b4d0e7;
 
 	--accent-color: #A51C30;
 	--accent-color: #722F37;

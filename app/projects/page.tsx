@@ -16,9 +16,11 @@ export default async function Projects() {
 			<h1 className={`${styles.title} ${playfairDisplay.className}`}>
 				Projects Page
 			</h1>
-			{projects.map(project => (
-				<Project project={project} key={project.id} />
-			))}
+			<div className={styles.projects}>
+				{projects.map(project => (
+					<Project project={project} key={project.id} />
+				))}
+			</div>
 		</main>
 	)
 }

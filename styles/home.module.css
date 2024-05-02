@@ -18,6 +18,10 @@
 	color: var(--headings-text-color);
 }
 
+.title {
+	color: var(--brand-bg);
+}
+
 .name {
 	color: var(--complementary-color);
 	font-size: 1.5rem;

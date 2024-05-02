@@ -20,6 +20,7 @@
 	padding: 0 0.5rem;
 	box-shadow: var(--brand-bg) 0px 2px 4px 0px, var(--brand-bg) 0px 2px 16px 0px;
 	box-shadow: var(--brand-bg) 0px 0px 0px 3px;
+	box-shadow: var(--complementary-color) 0px 0px 0px 3px;
 	border-radius: 78px;
 }
 
@@ -39,10 +40,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	text-align: center;
-
 	box-shadow: var(--brand-color) 0px 2px 4px 0px, var(--brand-color) 0px 2px 16px 0px;
+	box-shadow: #1ba098 0px 0px 0px 3px;
 	box-shadow: var(--brand-color) 0px 5px 15px;
 }
 
