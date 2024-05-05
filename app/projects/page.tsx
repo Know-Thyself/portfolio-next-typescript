@@ -1,6 +1,6 @@
 import prisma from '@/lib/client'
 import Project from '@/components/project'
-import { playfairDisplay, playfairDisplayItalic, raleway } from '@/styles/fonts'
+import { playfairDisplay, playfairDisplayItalic } from '@/styles/fonts'
 import styles from '@/styles/projects.module.css'
 
 async function getProjects() {
@@ -12,7 +12,7 @@ export default async function Projects() {
 	const projects = await getProjects()
 
 	return (
-		<main className={`${styles.main} ${raleway.className}`}>
+		<main className={styles.main}>
 			<h1 className={`${styles.title} ${playfairDisplay.className}`}>
 				Projects Page
 			</h1>

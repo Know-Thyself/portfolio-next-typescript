@@ -1,8 +1,11 @@
+'use client'
+
+import { useRouter, usePathname } from 'next/navigation'
 import { playfairDisplay, playfairDisplayItalic, raleway } from '@/styles/fonts'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -18,8 +21,19 @@ type ProjectProps = {
 }
 
 export default function Project({ project }: { project: ProjectProps }) {
+	const router = useRouter()
+	const pathname = usePathname()
+
 	return (
-		<div className={styles['project-wrapper']}>
+		<div
+			className={styles['project-wrapper']}
+			onClick={() => {
+				const newPath =
+					pathname +
+					`/${project.title.toLowerCase().split(' ').join('-')}/${project.id}`
+				router.push(newPath)
+			}}
+		>
 			<h4 className={styles['project-title']}>{project.title}</h4>
 			<div className={styles['image-tooltip-container']}>
 				<Image
@@ -58,22 +72,6 @@ export default function Project({ project }: { project: ProjectProps }) {
 					Live Demo
 				</a>
 			</div>
-			{/* <Image
-				src={`/images/projects/${project.image}`}
-				alt={project.title}
-				width={400}
-				height={250}
-			/>
-			<p className={styles.summary}>
-				<span className={`fs-5 fw-semibold ${styles.name} ${playfairDisplayItalic.className}`}>
-					{project.title}{' '}
-				</span>
-				{project.summary}
-			</p>
-			<div>
-				<a href={project.demo}>Live Demo</a>
-				<a href={project.repository}>GitHub</a>
-			</div> */}
 		</div>
 	)
 }
