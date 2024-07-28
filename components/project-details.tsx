@@ -26,11 +26,8 @@ type ProjectProps = {
 
 export default function ProjectDetails({ project }: { project: ProjectProps }) {
 	const [showMore, setShowMore] = useState(false)
-	let summaryLines, lessText
-	// if (project.summary) {
-	summaryLines = project.summary.split(/\n/)
-	lessText = summaryLines.join(' ').slice(0, 300)
-	// }
+	const summaryLines = project.summary.split(/\n/)
+	const lessText = summaryLines.join(' ').slice(0, 300)
 
 	const toggleText = () => {
 		setShowMore(!showMore)

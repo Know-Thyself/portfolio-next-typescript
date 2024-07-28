@@ -13,9 +13,9 @@ export default async function Projects() {
 
 	return (
 		<main className={styles.main}>
-			<h1 className={`${styles.title} ${playfairDisplay.className}`}>
-				Projects Page
-			</h1>
+			<h2 className={`${styles.title} ${playfairDisplay.className}`}>
+				Checkout My Projects
+			</h2>
 			<div className={styles.projects}>
 				{projects.map(project => (
 					<Project project={project} key={project.id} />

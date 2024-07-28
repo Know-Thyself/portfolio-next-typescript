@@ -5,8 +5,9 @@
 }
 
 .title {
-	margin-left: 5%;
-	font-weight: 600;
+	font-weight: 500;
+	padding: 1rem 0;
+	text-align: center;
 }
 
 .name {
@@ -78,6 +79,7 @@
 .project-title {
 	width: 100%;
 	background-color: var(--accent-color);
+	background-color: var(--complementary-color);
 	margin: 0 auto;
 	text-align: center;
 	padding: 0.5rem 0;
@@ -91,7 +93,7 @@
 }
 
 .project-img {
-	width: 90%;
+	width: 100%;
 	height: auto;
 }
 

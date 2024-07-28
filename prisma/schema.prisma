@@ -45,3 +45,10 @@ model project {
     demo       String @db.VarChar(255)
     repository String @db.VarChar(255)
 }
+
+model about {
+    id    Int    @id @default(autoincrement())
+    intro String @db.Text
+    bio   String @db.Text
+    image String @db.VarChar(255)
+}
